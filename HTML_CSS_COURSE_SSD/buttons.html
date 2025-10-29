@@ -1,0 +1,250 @@
+<!--CSS
+    - CSS selector
+        - in this case we can change the color of all buttons red
+        - CSS property : value
+
+-->
+<style>
+    /* Youtube subscribe button */
+    .subscribe-button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: opacity 0.15s;
+        vertical-align:top;
+    }
+
+    /* Pseudo class 
+    opacity between 0 and 1*/
+    .subscribe-button:hover {
+        opacity: 0.8;
+    }
+
+    .subscribe-button:active {
+        opacity: 0.5;
+    }
+
+    /* Facebook Join Button */
+    .join-button {
+        background-color: white;
+        border-color: rgb(6, 95, 212);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(6, 95, 212);
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.15s, color 0.15s;
+    }
+
+    .join-button:hover {
+        background-color: rgb(6, 95, 212);
+        color: white;
+    }
+
+    .join-button:active {
+        opacity: 0.7;
+    }
+
+    /* Twitter tweet button */
+    .tweet-button {
+        background-color: rgb(29, 155, 240);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 75px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 10px;
+        transition: box-shadow 0.15s;
+        vertical-align: top;
+    }
+
+    .tweet-button:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Uber request now button */
+    .request-now-button {
+        background-color: black;
+        color: white;
+        border: none;
+        height: 37px;
+        width: 118px;
+        border-radius: 1px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.2s;
+    }
+
+    .request-now-button:hover {
+        opacity: 0.8;
+    }
+
+    /* Amazon Add to Cart button */
+    .add-to-cart-button {
+        background-color: rgb(246, 223, 70);
+        color: black;
+        border: none;
+        height: 30px;
+        width: 160px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 15px;
+        transition: 0.2s;
+    }
+
+    .add-to-cart-button:hover {
+        background-color: rgb(234, 199, 0);
+    }
+
+    /* Github Sign up button */
+    .sign-up-button {
+        color: white;
+        background-color: rgb(46, 164, 79);
+        border: none;
+        height: 35px;
+        width: 85px;
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.15s;
+    }
+
+    .sign-up-button:hover {
+        box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Bootstrap Get started and Download buttons */
+    .bootstrap-get-started-button {
+        color: white;
+        background-color: rgb(121, 82, 179);
+        font-weight: bold;
+        border: none;
+        height: 38px;
+        width: 112px;
+        border-radius: 3px;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 13px;
+        transition: 0.15s;
+    }
+
+    .bootstrap-get-started-button:hover {
+        background-color: rgb(92, 62, 136);
+    }
+
+    .bootstrap-download-button {
+        color: rgb(108, 117, 125);
+        background-color: white;
+        border-color: rgb(108, 117, 125);
+        border-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+        height: 38px;
+        width: 112px;
+        border-radius: 3px;
+        font-weight: bold;
+        margin: 10px;
+        font-size: 13px;
+        transition: 0.15s;
+    }
+
+    .bootstrap-download-button:hover {
+        background-color: rgb(108, 117, 125);
+        color: white;
+    }
+
+    /* Linked in Apply on company website and save buttons */
+    .linkedin-apply-on-company-website-button {
+        color: white;
+        background-color: rgb(10, 102, 194);
+        border: none;
+        font-weight: bold;
+        height: 40px;
+        width: 280px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 17px;
+        transition: 0.15s
+    }
+
+    .linkedin-apply-on-company-website-button:hover {
+        background-color: rgb(7, 74, 140);
+    }
+
+    .linkedin-save-button {
+        color: rgb(10, 102, 194);
+        background-color: white;
+        border-color: rgb(10, 102, 194);
+        font-weight: bold;
+        border-style: solid;
+        border-width: 1px;
+        height: 40px;
+        width: 80px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 17px;
+        transition: 0.15s
+    }
+
+    .linkedin-save-button:hover {
+        background-color: rgba(10, 102, 194, 0.2);
+        border-width: 2px;
+    }
+</style>
+
+<button class="subscribe-button">
+    SUBSCRIBE
+</button>
+
+<button class="join-button">
+    JOIN
+</button>
+
+<button class="tweet-button">
+    Tweet
+</button>
+
+<button class="request-now-button">
+    Request Now
+</button>
+
+<button class="add-to-cart-button">
+    Add to Cart
+</button>
+
+<button class="sign-up-button">
+    Sign Up
+</button>
+
+<button class="bootstrap-get-started-button">
+    Get started
+</button>
+
+<button class="bootstrap-download-button">
+    Download
+</button>
+
+<button class="linkedin-apply-on-company-website-button">
+    Apply on company website
+</button>
+
+<button class="linkedin-save-button">
+    Save
+</button>
