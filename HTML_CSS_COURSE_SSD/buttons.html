@@ -12,11 +12,11 @@
         border: none;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 16px;
+        padding-right: 16px;
         border-radius: 5px;
         cursor: pointer;
-        margin-right: 10px;
+        margin-right: 8px;
         transition: opacity 0.15s;
         vertical-align:top;
     }
@@ -45,6 +45,7 @@
         border-radius: 2px;
         cursor: pointer;
         transition: background-color 0.15s, color 0.15s;
+        /* vertical-align: top; */
     }
 
     .join-button:hover {
@@ -85,7 +86,6 @@
         width: 118px;
         border-radius: 1px;
         cursor: pointer;
-        margin: 10px;
         transition: 0.2s;
     }
 
@@ -100,10 +100,10 @@
         border: none;
         height: 30px;
         width: 160px;
-        margin: 10px;
         cursor: pointer;
         border-radius: 15px;
         transition: 0.2s;
+        margin: 10px;
     }
 
     .add-to-cart-button:hover {
@@ -118,7 +118,6 @@
         height: 35px;
         width: 85px;
         cursor: pointer;
-        margin: 10px;
         border-radius: 5px;
         font-weight: bold;
         transition: 0.15s;
@@ -137,7 +136,6 @@
         height: 38px;
         width: 112px;
         border-radius: 3px;
-        margin: 10px;
         cursor: pointer;
         font-size: 13px;
         transition: 0.15s;
@@ -158,7 +156,6 @@
         width: 112px;
         border-radius: 3px;
         font-weight: bold;
-        margin: 10px;
         font-size: 13px;
         transition: 0.15s;
     }
@@ -178,7 +175,6 @@
         width: 280px;
         border-radius: 20px;
         cursor: pointer;
-        margin: 10px;
         font-size: 17px;
         transition: 0.15s
     }
@@ -198,7 +194,6 @@
         width: 80px;
         border-radius: 20px;
         cursor: pointer;
-        margin: 10px;
         font-size: 17px;
         transition: 0.15s
     }
@@ -206,6 +201,70 @@
     .linkedin-save-button:hover {
         background-color: rgba(10, 102, 194, 0.2);
         border-width: 2px;
+    }
+
+    .stretched-button{
+        color: white;
+        background-color: green;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .stretched-button:hover {
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .shadow-button{
+        color: white;
+        background-color: green;
+        border: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .shadow-button:active {
+        /* padding-right: 8px;
+        padding-left: 12px;
+        padding-top: 7px;
+        padding-bottom: 3px; */
+        margin-top: 2px;
+        margin-left: 2px;
+        box-shadow: none;
+    }
+
+    .margin-padding-put-together-button {
+        color: white;
+        background-color: green;
+        border: none;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: padding 0.15s, margin 0.15s;
+    }
+
+    .margin-padding-put-together-button:hover {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 </style>
 
@@ -247,4 +306,38 @@
 
 <button class="linkedin-save-button">
     Save
+</button>
+
+<button>
+    Back
+</button>
+
+<a href="https://music.apple.com/">1</a>
+<a href="https://music.apple.com/">2</a>
+<a href="https://music.apple.com/">3</a>
+<a href="https://music.apple.com/">4</a>
+<a href="https://music.apple.com/">5</a>
+
+<button>
+    Next
+</button>
+
+<button class="stretched-button">
+    Stretch
+</button>
+
+<button class="shadow-button">
+    Shadow
+</button>
+
+<button class="margin-padding-put-together-button">
+    One
+</button>
+
+<button class="margin-padding-put-together-button">
+    Two
+</button>   
+
+<button class="margin-padding-put-together-button">
+    Three
 </button>
