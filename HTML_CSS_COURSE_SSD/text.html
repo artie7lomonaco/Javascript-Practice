@@ -1,38 +1,253 @@
 <style>
-    .video-title{
+    p {
         font-family: Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    /* 
+    CSS spedificity:
+        - Priority browser follows:
+        - Selector that is more specific has higher priority
+        - Inline styles have higher priority than internal or external stylesheets
+    */
+
+    .video-title {
         font-weight: bold;
         font-size: 16px;
         width: 300px;
         line-height: 22px;
-        margin-bottom: 4px;
-        
+        margin-bottom: 5px;
+
     }
 
     .video-stats {
-        font-family: Arial;
         font-size: 12px;
         color: gray;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     .video-author {
-        font-family: Arial;
         font-size: 12px;
         color: gray;
-        margin-top: 12px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     .video-description {
+        font-size: 12px;
+        width: 240px;
+        color: gray;
+        line-height: 18px;
+        margin-bottom: 100px;
+    }
+
+    .apple-text {
+        margin-bottom: 50px;
+        font-size: 14px;
+        background-color: rgb(227, 65, 64);
+        color: white;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .shop-link {
+        cursor: pointer;
+    }
+
+    .shop-link:hover {
+        text-decoration: underline;
+    }
+
+    .span-example {
+        color: red;
+        margin-left: 20px;
+    }
+
+    .span-example:hover {
+        text-decoration: underline;
+    }
+
+    .tahoma-font {
+        margin-top: 50px;
+        font-family: Tahoma;
+        font-weight: bold;
+    }
+
+    .biggest-deals-of-the-year {
+        margin-top: 20px;
+        font-family: Arial;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .sales-end-tuesday {
+        color: orangered;
+        font-family: Arial;
+        font-style: italic;
+        margin-top: 3px;
+    }
+
+    .html-css-course {
+        font-family: Verdana;
+        margin-top: 50px;
+        font-weight: bold;
+    }
+
+    .beginner-to-pro {
+        font-family: Verdana;
+        margin-top: 2px;
+        color: gray;
+        font-size: 14px;
+    }
+
+    .in-this-course {
+        font-family: Verdana;
+        margin-top: 15px;
+        width: 260px;
+        font-size: 14px
+    }
+
+    .get-started-button {
+        color: white;
+        background-color: green;
+        border: none;
+        border-radius: 4px;
+        margin-top: 15px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 14px;
+        padding-right: 14px;
+        cursor: pointer;
+    }
+
+    .get-started-button:hover {
+        background-color: darkgreen;
+    }
+
+    .shopping-for-your-business-text {
+        margin-top: 50px;
+        font-family: Arial;
+        font-weight: bold;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .apple-at-work-text {
+        margin-top: 10px;
+        font-family: Arial;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .learn-more-text {
+        margin-top: 10px;
+        font-family: Arial;
+        color: blue;
+        cursor: pointer;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .learn-more-text:hover {
+        text-decoration: underline;
+    }
+
+    .new-macbook-pro-text {
+        margin-top: 50px;
+        font-family: Arial;
+        font-size: 10px;
+        color: orange;
+        text-align: center;
+    }
+    .macbook-pro-text{
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .supercharged-for-pros-text {
+        font-family: Arial;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 2px;
+    }
+
+    .from-1999-text {
         font-family: Arial;
         font-size: 12px;
-        margin-top: 8px;
-        width: 240px;
-        color:gray;
-        line-height: 18px;
+        text-align: center;
+        margin-top: 4px;
+    } 
+
+    .buy-button {
+        color: white;
+        font-size: 12px;
+        background-color: blue;
+        opacity: 0.8;
+        border: none;
+        border-radius: 12px;
+        margin-top: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
+   .amount-text {
+    font-size: 20px;
+    font-family: Arial;
+   } 
+   
+   .usd-text {
+    color: gray;
+    font-size: 10px;
+   }
+    .today-stock-status-text {
+        color: green;
+        font-size: 12px;
+        margin-top: 5px;
+   } 
+
+   .after-hours-text{
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+   }
+
+    .after-hours-status-text{
+     color: red;
+     font-size: 12px;
+    }
+   
+   .tweet-user-text {
+    font-weight: bold;
+    margin-top: 50px;
+   }
+
+   .user-at-text {
+    color: gray;
+    font-weight: normal
+   }
+
+   .paragraph-text {
+    margin-top: 10px;
+    width: 500px;
+   }
+
+   .mention-text {
+    color: skyblue;
+    margin-top: 20px;
+   }
+   
 </style>
 
 <p class="video-title">
@@ -43,13 +258,65 @@
 Html entities
 -->
 <p class="video-stats">
-    3.4M views  &#183; 6 months ago
+    3.4M views &#183; 6 months ago
 </p>
 
 <p class="video-author">
-    Marques Brownlee &#10003; 
+    Marques Brownlee &#10003;
 </p>
 
 <p class="video-description">
-    Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+    Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to
+    Sundar!
 </p>
+
+<p class="apple-text">
+    Shop early for the best selection of holiday favourites. <span class="shop-link">Shop now &gt;</span>
+</p>
+
+<p>
+    Shop early for the <strong>best selection</strong> of <u>holiday</u> favourites. <span class="span-example">Shop now
+        &gt;</span>
+</p>
+
+<!--5a. -->
+<p class="tahoma-font">This is Tahoma Font</p>
+
+<!--5b. -->
+<p class="biggest-deals-of-the-year">Biggest Deals of the Year!</p>
+<p class="sales-end-tuesday">
+    Sales end Tuesday
+</p>
+
+<!--5c. -->
+<p class="html-css-course">HTML CSS Cource</p>
+<P class="beginner-to-pro">Beginner to Pro</P>
+<p class="in-this-course">In this course, we'll learn the skills you need ot become a developer.</p>
+<button class="get-started-button">Get Started</button>
+
+<!--5d. -->
+<p class="shopping-for-your-business-text">Shopping for your business?</p>
+<p class="apple-at-work-text">See how apple at Work can help.</p>
+<p class="learn-more-text">Learn More &gt;</p>
+
+<!--5e. -->
+<p class="new-macbook-pro-text">New</p>
+<p class="macbook-pro-text">MacBook Pro</p>
+<p class="supercharged-for-pros-text">Supercharged for pros.</p>
+<p class="from-1999-text">From $1999</p>
+<button class="buy-button">Buy</button> 
+
+<!--5f. -->
+<p class="amount-text">
+    1,049.61
+     <span class="usd-text">USD</span>
+</p>
+<p class="today-stock-status-text">+18.05 (1.75%) today</p>
+<p class="after-hours-text">
+    After hours 1,048.00 
+    <span class="after-hours-status-text">-1.61 (0.15%)</span>
+</p>
+
+<p class="tweet-user-text">freeCodeCamp.org <spa class="user-at-text">@freeCodeCamp 1h</span></p>
+<p class="paragraph-text">As a web developer, you'll want to make your projects easy to use and navigate around</p>
+<p class="paragraph-text">Here <span class="mention-text">@chp_it</span> outlines the top skill new developers should have.</p>
